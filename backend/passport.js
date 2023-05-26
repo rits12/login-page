@@ -4,11 +4,11 @@ const FacebookStrategy = require("passport-facebook").Strategy;
 const passport = require("passport");
 
 const GOOGLE_CLIENT_ID =
-  "257182843244-mjaj7v8289v71bdmgm8fc6hs2f8btqh8.apps.googleusercontent.com";
-const GOOGLE_CLIENT_SECRET = "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";
+  "/**id goes here**/";
+const GOOGLE_CLIENT_SECRET = "/**secret goes here**/";
 
-const FACEBOOK_APP_ID = "176830185035096";
-const FACEBOOK_APP_SECRET = "582742d610db2096d21521e3fdeaee28";
+const FACEBOOK_APP_ID = "/**id goes here**/";
+const FACEBOOK_APP_SECRET = "/**secret goes here**/";
 
 passport.use(
   new GoogleStrategy(
