@@ -1,15 +1,10 @@
 .navbar {
-  height: 50px;
-  background-color: rgba(102, 16, 83, 0.698);
+  height: 100px;
+
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
+  justify-content: left;
 }
 
 .list {
@@ -33,7 +28,7 @@
 
 .home {
   display: flex;
-  padding: 50px 100px;
+  padding: 0px 0px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -63,7 +58,7 @@
 .cardButton {
   border: none;
   border-radius: 10px;
-  background-color: rgba(53, 16, 102, 0.678);
+  background-color: #538083;
   padding: 10px;
   color: white;
   font-weight: bold;
@@ -84,7 +79,7 @@
 }
 
 .postDesc {
-  padding: 0 100px;
+  padding: 0 0px;
   font-size: 24px;
   font-weight: 300;
   color: gray;
@@ -99,10 +94,14 @@
 }
 
 .login {
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../src/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .wrapper {
@@ -116,23 +115,25 @@
   border-radius: 20px;
 }
 
-
-.left,.right{
+.left,
+.right {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.center{
+.center {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
+  padding-bottom: 20%;
 }
 
-.or{
+.or {
   border: 2px solid lightgray;
   border-radius: 50%;
   padding: 10px;
@@ -141,7 +142,7 @@
   font-weight: bold;
 }
 
-.line{
+.line {
   width: 0.5px;
   height: 70%;
   background-color: lightgray;
@@ -154,43 +155,43 @@
   z-index: -1;
 }
 
-.loginButton{
-  width: 150px;
-  padding: 15px 25px;
-  border-radius: 5px;
-  color: white;
+.loginButton {
+  width: 160px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: black;
   display: flex;
   align-items: center;
   font-weight: bold;
   margin-bottom: 20px;
   cursor: pointer;
+  font-size: small;
 }
 
-.google{
-  background-color: #df4930;
+.google {
+  background-color: white;
+  align-self: flex-start;
 }
-.facebook{
-  background-color: #507cc0;
-}
-.github{
-  background-color: black;
+.facebook {
+  background-color: white;
+  align-self: flex-start;
 }
 
-.icon{
-  width: 20px;
-  height: 20px;
+.icon {
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
-input{
+input {
   width: 200px;
   padding: 15px 20px;
   margin-bottom: 20px;
 }
 
-.submit{
+.submit {
   width: 200px;
-  background-color: rgba(128, 0, 128, 0.671);
+  background-color: #ec7357;
   color: white;
   font-weight: bold;
   border: none;
@@ -198,13 +199,13 @@ input{
   border-radius: 5px;
 }
 
-.loginTitle{
+.loginTitle {
   position: absolute;
-  top: 150px;
-  color:lightgray
+  top: 0px;
+  color: lightgray;
 }
 
-.link{
+.link {
   color: inherit;
   text-decoration: none;
 }
@@ -228,6 +229,8 @@ input{
   .center {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .left {
